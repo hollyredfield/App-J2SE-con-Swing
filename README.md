@@ -16,22 +16,16 @@ Java Development Kit (JDK) 8+
 Servidor MySQL
 Maven (para la gestión de dependencias)
 🔧 Instrucciones de Configuración
-Clonar el repositorio:
-
-bash
-Copy code
+1. Clonar el repositorio:
 git clone https://github.com/hollyredfield/App-J2SE-con-Swing.git
 cd App-J2SE-con-Swing
-Configurar la base de datos:
+2. Configurar la base de datos:
 
 Instala y arranca el servidor MySQL.
 
 Crea una nueva base de datos llamada inventory_management_db.
 
 Ejecuta el siguiente script SQL para crear las tablas necesarias e insertar datos de muestra:
-
-sql
-Copy code
 -- phpMyAdmin SQL Dump
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
@@ -94,18 +88,13 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-Configurar la aplicación:
+3. Configurar la aplicación:
 
 Actualiza el archivo db.properties con tus credenciales de MySQL:
-properties
-Copy code
 db.url=jdbc:mysql://localhost:3306/inventory_management_db
 db.username=root
 db.password=tucontraseña
-Construir y ejecutar la aplicación:
-
-bash
-Copy code
+4. Construir y ejecutar la aplicación:
 mvn clean install
 java -jar target/inventory-management-system.jar
 🌟 Uso
@@ -115,7 +104,6 @@ Eliminar un Producto: Selecciona un producto y haz clic en "Eliminar".
 Generar Informes: Navega a la sección "Informes" y haz clic en "Generar Informe" para ver el estado actual del inventario.
 📄 Licencia
 Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
-
 🤝 Contribuciones
 ¡Las contribuciones son bienvenidas! Por favor, haz un fork del repositorio y envía un pull request para cualquier mejora o corrección de errores.
 
